@@ -1,0 +1,19 @@
+## vi bash mode stuff ##
+# Set bash to vi mode
+set -o vi
+# re-add ctrl+l, which allows you to clear screen
+bind -m vi-insert "\C-l":clear-screen
+
+## End vi bash mode stuff ##
+
+# Set xxx as default editor
+export EDITOR='vim'
+
+# start starship shell
+eval "$(starship init bash)"
+
+# create path for Spicetify
+export PATH=$PATH:/home/kuda/.spicetify
+
+# create path for my custom scripts
+export PATH=$PATH:/home/kuda/.local/bin

@@ -1,0 +1,46 @@
+### Nord VPN Related Alias' ###
+
+alias nord='nordvpn' # Shorten nordvpn syntax
+
+## Enable or Disable killswitch ##
+
+alias nordkillon='nordvpn set killswitch on'   # Enable killswitch
+alias nordkilloff='nordvpn set killswitch off' # Disable killswitch
+
+### End Nord Related Alias' ###
+
+### ls Related Alias' ###
+
+alias ls="eza" # turn eza into ls
+alias ll="eza -l" # turn eza -l into ll
+alias la="eza -la" # turn eza -la into la
+
+### End ls Related Alias' ###
+
+# Clear terminal history #
+alias clearhistory='history -c && history -w'
+
+# shorten remove command
+alias yeet='sudo pacman -Rns'
+
+# add color to grep
+alias grep='grep --color=auto'
+
+# re-install betterdiscord after update
+# alias betterdiscord-update="betterdiscordctl --d-install flatpak install"
+
+# re-install Spicetify after update
+alias spicetify-apply="spicetify backup apply"
+
+# re-install paru to fix incompatiable files after pacman update
+# alias paru-update="sudo pacman -S --needed base-devel && git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si"
+
+# Rename nvim to vim for quicker typing // Old habits die hard
+alias nv="nvim"
+
+# Custom shutdown command
+alias oyasumi="shutdown -h now"
+
+# Custom remove firmware for firmware I don't use
+# But I'm unsure if I really need or not
+alias yeet_firmware="sudo pacman -Rdd linux-firmware-amdgpu linux-firmware-broadcom linux-firmware-radeon linux-firmware-whence linux-firmware-realtek linux-firmware-mediatek"
